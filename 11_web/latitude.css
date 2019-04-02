@@ -1,0 +1,22 @@
+/* Styling for HTML elements */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 30px;
+    line-height: 150%;
+    color: rgb(255, 255, 255);
+    background: #efeee7;
+  }
+
+
+/* ~~~ DROP DOWN MENU ~~~ */
+.navbar-brand {
+    background: rgb(51, 218, 195);
+    font-family: Georgia, serif;
+    font-size: 30px;
+    color: white;
+
+    @media (max-width: 767px) {
+        .navbar-default .nabar-expand .navbar-nav;
+    } 
