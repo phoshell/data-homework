@@ -67,6 +67,7 @@ def tobs():
     for date, tobs in obs:
         if tobs !=None:
             obs_dict.setdefault(date, []).append(tobs)
+            print("I don't have an END variable.")
     
     return jsonify(obs_dict)
 
@@ -74,7 +75,6 @@ def tobs():
 @app.route("/api/v1.0/<start>/<end>")
 def date(start=None, end=None):
     if not end:
-        print("I don't have an END variable.")
         start_date = session.query(func.min(Measurement.tobs), func.avg(Measurement.tobs), func.max(Measurement.tobs)).\
             filter(Measurement.date >= start).all()
         start_sort = list(np.ravel(start_date))

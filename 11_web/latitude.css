@@ -1,22 +1,85 @@
 /* Styling for HTML elements */
 body {
-    padding: 0;
-    margin: 0;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    padding: 60;
+    margin: 20;
     font-size: 30px;
     line-height: 150%;
-    color: rgb(255, 255, 255);
-    background: #efeee7;
+    color: #dcb9fc;
+    background: #d2fcb9;
   }
-
 
 /* ~~~ DROP DOWN MENU ~~~ */
 .navbar-brand {
-    background: rgb(51, 218, 195);
+    background: #33dac3;
     font-family: Georgia, serif;
-    font-size: 30px;
-    color: white;
-
-    @media (max-width: 767px) {
-        .navbar-default .nabar-expand .navbar-nav;
+    font-size: large;
+    color: #ffffff;
     }
+
+.description-header {
+    margin: 0px;
+    margin-left: 0px;
+    font-size: 30px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    color: #33dac3;
+    }
+ 
+/* ~~~ COL BOX PROPERTIES ~~~ */
+.description-content {
+    padding: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: relative;
+    background-color: #ffffff;
+    }
+
+/* ~~~ IMAGE SIZES ~~~ */
+#description-image {
+    height: 300px;
+    width: 425px;
+    margin-top: 0px;
+    margin-right: 0px;
+}
+
+/* LANDING PAGE VISUALIZATION GRID */
+.viz-nav {
+    display: inline-block;
+    padding: 40px;
+    padding-bottom: 80px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    background-color: #ffffff;
+}
+
+.column {
+    float: left;
+    width: 5%;
+    padding: 10px;
+  }
+  
+.table-striped {
+    background-color: #ffffff;
+}
+
+
+@media (max-width: 480px) {
+    .navbar li {
+      padding: 10px;
+    }
+  
+    .row {
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+  
+    .navbar ul {
+      visibility: hidden;
+      cursor: pointer;
+    }
+  
+    #nav-select {
+      visibility: visible;
+    }
+  }
