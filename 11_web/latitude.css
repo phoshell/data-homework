@@ -27,6 +27,7 @@ body {
  
 /* ~~~ COL BOX PROPERTIES ~~~ */
 .description-content {
+    display: inline-block;
     padding: 50px;
     margin-top: 20px;
     margin-left: 20px;
@@ -39,31 +40,30 @@ body {
 #description-image {
     height: 300px;
     width: 425px;
-    margin-top: 0px;
-    margin-right: 0px;
 }
 
 /* LANDING PAGE VISUALIZATION GRID */
 .viz-nav {
     display: inline-block;
-    padding: 40px;
-    padding-bottom: 80px;
+    padding: 30px;
     margin-top: 20px;
     margin-bottom: 70px;
     background-color: #ffffff;
 }
-
-.column {
-    float: left;
-    width: 5%;
-    padding: 10px;
-  }
   
 .table-striped {
     background-color: #ffffff;
 }
 
+/* COLOR BORDER AROUND VISUALIZATION SIDE "MENU" */
+.viz-border {
+    box-sizing: border-box;
+    display: block;
+    border-style: solid;
+    border-color: #33dac3;
+  }
 
+/* INTERACTIVE RESPONSIVE */
 @media (max-width: 480px) {
     .navbar li {
       padding: 10px;
