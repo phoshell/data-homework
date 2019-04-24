@@ -28,8 +28,8 @@ var submit = d3.select("#filter-btn");
 
 // FUNCTION TO FILTER DATA
 submit.on("click", function() {
-        // var row = d3.selectALL("tr");
-        // row.delete();
+        var row = d3.select("tbody").selectAll("td");
+        row.remove();
 
         // Prevent the page from refreshing
         d3.event.preventDefault();
