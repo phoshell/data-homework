@@ -15,7 +15,7 @@ function buildTable(data) {
 
         // Append a cell to the row for each value
         // in the weather report object
-        var cell = tbody.append("td");
+        var cell = row.append("td");
 
         // Insert data into a table
         cell.text(value);
